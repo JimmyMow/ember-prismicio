@@ -1,5 +1,11 @@
-<h2 id='title'>{{#link-to 'application'}}Prismic.io Blog{{/link-to}}</h2>
+<div class="list-container">
+  <h2 id='title' class='home'>{{#link-to 'application'}}Prismic.io Blog with Ember.js{{/link-to}}</h2>
+  <ul class='list'>
+    {{ember-prismicio}}
+  </ul>
+</div>
 
-{{ember-prismicio}}
 
-{{outlet}}
+<div class="blog">
+  {{outlet}}
+</div>

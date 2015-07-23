@@ -1,5 +1,7 @@
-<div>
-  {{#each content}}
-    {{#link-to 'blog.index' this.id}}{{this.slug}}{{/link-to}}
-  {{/each}}
-</div>
+{{#each content}}
+  {{#link-to "blog.index" this.id tagName="li" href=false}}
+    <a {{bind-attr href="view.href"}}>
+      {{this.slug}}
+    </a>
+  {{/link-to}}
+{{/each}}
