@@ -1,0 +1,5 @@
+<div>
+  {{#each content}}
+    {{#link-to 'blog.index' this.id}}{{this.slug}}{{/link-to}}
+  {{/each}}
+</div>

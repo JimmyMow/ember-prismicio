@@ -2,6 +2,15 @@
 
 module.exports = function(environment) {
   var ENV = {
+    contentSecurityPolicy: {
+      'default-src': "'none'",
+      'script-src': "'self' 'unsafe-eval' 'unsafe-eval'", // Allow scripts from https://cdn.mxpnl.com
+      'font-src': "'self'", // Allow fonts to be loaded from http://fonts.gstatic.com
+      'connect-src': "'self' https://jackschessblog.prismic.io", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'img-src': "'self' https://prismic-io.s3.amazonaws.com",
+      'style-src': "'self' 'unsafe-inline'", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
+      'media-src': "'self'"
+    },
     modulePrefix: 'ember-prismicio',
     environment: environment,
     baseURL: '/',
