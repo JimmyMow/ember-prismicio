@@ -1,0 +1,26 @@
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  color: black;
+  margin: 15px;
+}
+
+.nav {
+  a {
+    color: #0084B4;
+  }
+}
+
+section[data-field='article.title'] {
+  h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: black;
+  }
+}
+
+section[data-field='article.longlede'] {
+  margin: 20px 0;
+}
