@@ -1,7 +1,10 @@
-{{#each content}}
-  {{#link-to "blog.index" this.id tagName="li" href=false}}
-    <a {{bind-attr href="view.href"}}>
-      {{this.slug}}
-    </a>
-  {{/link-to}}
-{{/each}}
+<div class="post">
+  <h2 class="title">
+    {{#link-to 'blog.index' blog}}{{blog.slug}}{{/link-to}}
+  </h2>
+  <img {{bind-attr src=imgUrl}}>
+  <p class='preview'>
+    {{longledge}}
+  </p>
+</div>
+

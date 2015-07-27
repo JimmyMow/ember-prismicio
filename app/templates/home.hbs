@@ -1,0 +1,23 @@
+<div class="header-wrapper avatar-style-circle">
+  <header id="header">
+      <div class="header-image-wrapper ">
+          <div class="header-image parallax cover"></div>
+          <div class="loader-bg"></div>
+      </div>
+
+      <div class="blog-title content">
+          <figure class="avatar-wrapper animate">
+              <img src="/images/bitcoin-top.gif" alt="" class="print-only invisible"></a>
+          </figure>
+          <div class="title-group animate">
+            <span class="description"></span>
+          </div>
+      </div>
+  </header>
+</div>
+
+{{#each model}}
+  {{ember-prismicio blog=this}}
+{{/each}}
+
+{{outlet}}

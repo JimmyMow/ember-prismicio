@@ -7,7 +7,7 @@ module.exports = function(environment) {
       'script-src': "'self' 'unsafe-eval' 'unsafe-eval'", // Allow scripts from https://cdn.mxpnl.com
       'font-src': "'self'", // Allow fonts to be loaded from http://fonts.gstatic.com
       'connect-src': "'self' https://jackschessblog.prismic.io", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
-      'img-src': "'self' https://prismic-io.s3.amazonaws.com",
+      'img-src': "'self' https://prismic-io.s3.amazonaws.com http://static.tumblr.com http://38.media.tumblr.com",
       'style-src': "'self' 'unsafe-inline'", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
       'media-src': "'self'"
     },
