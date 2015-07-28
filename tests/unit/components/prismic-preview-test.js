@@ -3,7 +3,7 @@ import {
   test
 } from 'ember-qunit';
 
-moduleForComponent('ember-prismicio', 'EmberPrismicioComponent', {
+moduleForComponent('prismic-preview', 'EmberPrismicioComponent', {
   // specify the other units that are required for this test
   // needs: ['component:foo', 'helper:bar']
 });
