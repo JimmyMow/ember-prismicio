@@ -1,7 +1,9 @@
 <div class='post'>
-  <article>
-    <script type="text/template">
+  {{#if doc}}
+    <article>
+      <script type="text/template">
         <%= doc.asHtml() %>
-    </script>
-  </article>
+      </script>
+    </article>
+  {{/if}}
 </div>

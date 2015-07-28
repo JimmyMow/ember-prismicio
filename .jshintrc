@@ -3,8 +3,7 @@
     "document",
     "window",
     "-Promise",
-    "Prismic",
-    "jQuery"
+    "Prismic"
   ],
   "browser" : true,
   "boss" : true,
